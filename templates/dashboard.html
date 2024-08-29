@@ -1,0 +1,9 @@
+<h1>Dashboard</h1>
+<a href="{{ url_for('create_team') }}">Create New Team</a>
+<ul>
+    {% for team in teams %}
+    <li>{{ team.name }}</li>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('logout') }}">Logout</a>
+
